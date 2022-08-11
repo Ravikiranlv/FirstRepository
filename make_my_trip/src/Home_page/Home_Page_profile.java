@@ -18,5 +18,8 @@ public class Home_Page_profile {
 
 		return null;
 	} 
+	@FindBy
+	public WebElement test;
+	
 
 }
