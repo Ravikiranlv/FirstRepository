@@ -28,7 +28,7 @@ public class Testcase_into_automation_script {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 20);
-		//driver.navigate().to("");	
+		driver.navigate().to("");	
 	}
 	@Test
 	public void Login() throws EncryptedDocumentException, IOException, InterruptedException
