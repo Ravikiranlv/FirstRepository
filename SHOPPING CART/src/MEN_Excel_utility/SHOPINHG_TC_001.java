@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
@@ -22,8 +23,8 @@ public class SHOPINHG_TC_001 {
 	@Test(dataProvider = "Testdata")
 	public void ReadDataFromDataProvider(String[] arr)
 	{
-		System.setProperty("webdriver.gecko.driver", "./softwares/geckodriver.exe");
-		WebDriver driver=new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "./softwares/chromedriver1.exe");
+		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
